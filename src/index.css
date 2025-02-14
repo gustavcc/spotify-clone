@@ -27,7 +27,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Cascadia Code', monospace, sans-serif;
 }
 
 body {
@@ -50,7 +49,7 @@ img {
 }
 
 #root {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat", sans-serif, monospace;
     display: flex;
     flex-direction: column;
     min-height: 100svh;

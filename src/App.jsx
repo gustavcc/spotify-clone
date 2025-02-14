@@ -1,6 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
-import Footer from './components/Footer';
 import Home from './pages/Home';
 import Artists from './pages/Artists';
 import Artist from './pages/Artist';
@@ -19,8 +18,6 @@ const App = () => {
         <Route path='/songs' element={<Songs />} />
         <Route path='/song/:id' element={<Song />} />
       </Routes>
-
-      <Footer />
     </BrowserRouter>
   )
 }

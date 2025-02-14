@@ -1,7 +1,7 @@
 import logoSpotify from '../assets/logo/spotify-logo.png';
 import { Link } from 'react-router-dom';
 
-const Header = () => {
+const Footer = () => {
   return (
     <>
       <div className='header'>
@@ -17,4 +17,4 @@ const Header = () => {
   )
 }
 
-export default Header
+export default Footer

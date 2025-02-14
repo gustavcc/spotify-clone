@@ -1,17 +1,18 @@
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
+import PropTypes from 'prop-types';
 
 
-const SongItem = () => {
+const SongItem = ({ id, image, name, index }) => {
   return (
-    <Link to="/song/1" className="song-item">
+    <Link to={`/song/${id}`} className="song-item">
 
       <div className="song-item__number-album">
-        <p>1</p>
+        <p>{index + 1}</p>
 
         <div className="song-item__album">
-          <img className="song-item__image" src="https://i.scdn.co/image/ab67616d00001e022774b00531d558bc19e12a24" alt="Imagem da música" />
+          <img className="song-item__image" src={image} alt={`Imagem da música ${name}`} />
 
-          <p className="song-item__name">Ultima saudade</p>
+          <p className="song-item__name">{name}</p>
 
         </div>
       </div>
@@ -19,5 +20,15 @@ const SongItem = () => {
     </Link>
   )
 }
+
+SongItem.propTypes = {
+  id: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  audio: PropTypes.string.isRequired,
+  duraction: PropTypes.string.isRequired,
+  artist: PropTypes.string.isRequired,
+  index: PropTypes.number.isRequired
+};
 
 export default SongItem
