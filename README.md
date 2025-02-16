@@ -11,13 +11,13 @@ Neste projeto, eu busquei, além do que foi proposto na jornada de aulas, integr
 - Aula 2: Continuando o projeto e criando o Back-End do project.
 - Aula 3: Criação da API com Node.js, MongoDB e Express: conexão do Back-End com o Front-End.
 - Aula 4: Acabamento com animações e variáveis e o deploy do sistema
-- Além disso, adicionei algumas mudanças, como: cores, Footer e integrações para "add to the project a Juice", se é que voçês me entendem.
+- Além disso, adicionei algumas mudanças, como: cores, Footer e integrações para "add to the project a Juice", se é que vocês me entendem.
 
 ### Objetivos
 
 - Aprender a desenvolver um projeto do 0 (zero) com Vite, React.js e Node.js, o que me fez evoluir bastante nessas tecnologias.
 - Integrar banco de dados MongoDB.
-- Fazer deploy do projeto, sunbindo ele na AWS (Amazon Web Services).
+- Fazer deploy do projeto, subindo ele na AWS (Amazon Web Services).
 - Desenvolver meu lado criativo.
 - Pensar de maneira linear e lógica, buscando sempre aplicar boas práticas e o que há de mais moderno no mercado.
 - Adicionar um suco ao projeto com integrações de APIs e torná-lo mais "interessante".
