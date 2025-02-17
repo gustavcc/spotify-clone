@@ -4,6 +4,8 @@ Uma jornada de desenvolvimento Full Stack que me enisnou muitos conceitos, tecno
 
 A Hashtag Programação me propocionou essa prática e conhecimentos absurods e sou extremamente grato.
 
+![Captura de tela 2025-02-17 172803](https://github.com/user-attachments/assets/a33ee3b8-6f1b-4951-9e75-210b7ba3c197)
+
 ## Introdução
 
 Neste projeto, eu busquei, além do que foi proposto na jornada de aulas, integrar uma API para adicionar mais músicas (o máximo que pude). Aqui, aprendi muito sobre como ir evoluindo aos poucos, as boas práticas de progração que todos os Devs deveriam ter e o que há de mais moderno no mercado de Devs, aprendi a construir ideias mais criativas e de maneira lógica.
