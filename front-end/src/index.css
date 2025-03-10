@@ -11,7 +11,8 @@
     --blue-900: hsl(211, 76%, 11%);
     --blue-950: hsl(0, 0%, 0%);
     --blue-1000: hsl(0, 0%, 0%);
-    --back-gray: #1f2022;
+    --back-gray: #161617;
+    --aside-block: #2a2c2f;
     --blue-1000-25: hsla(220, 69%, 3%, 0.25);
 
     --transition-duration: 200ms;
@@ -68,15 +69,44 @@ img {
 .aside {
     display: flex;
     flex-direction: column;
-    width: 15%;
-    height: 100%;
+    width: 20%;
     background-color: var(--back-gray);
     border-radius: 9px;
-    padding: 20px;
     margin: 0 0 10px 10px;
-    gap: 10px;
     overflow: hidden;
     overflow-y: scroll;
+}
+
+.aside__items {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 5px;
+    margin: 5px;
+    border-radius: 7px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.aside__items::-webkit-scrollbar {
+    width: 10px;
+    background: transparent;
+    border-radius: 10px;
+}
+
+.aside__items::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(rgba(255,255,255, 0.3), rgba(255,255,255, 0.3));  
+    border-radius: 10px;
+}
+
+.aside__title {
+    font-size: 18px;
+    height: 100px;
+    font-weight: 600;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 20px;
 }
 
 .aside::-webkit-scrollbar {
@@ -96,9 +126,32 @@ img {
 
 .aside__block {
     width: 100%;
-    height: 50px;
+    height: 80px;
     border-radius: 7px;
-    background-color: #2a2c2f;
+    font-size: 15px;
+    color: var(--blue-100);
+    display: flex;
+    padding: 10px;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.aside__block img {
+    width: 50px;
+    height: 50px;
+    border-radius: 10%;
+}
+
+.aside__block:hover {
+    background-color: var(--blue-800);
+    cursor: pointer;
+}
+
+@media (max-width: 993px) {
+    .aside__block {
+        font-size: 10px;
+    }
+    
 }
 
 /* Header */
@@ -117,8 +170,6 @@ img {
 
 /* Search Bar */
 
-/* From Uiverse.io by satyamchaudharydev */
-/* this is a recreation of twitter search in css */
 .form {
     --input-text-color: #fff;
     --input-bg-color: #282a2c;
@@ -139,6 +190,14 @@ img {
     width: var(--width-of-input);
     position: relative;
     isolation: isolate;
+}
+
+.form label:hover {
+    cursor: text;
+}
+
+.form svg:hover {
+    cursor: pointer;
 }
 
 /* a fancy bg for showing background and border when focus. */
@@ -192,32 +251,7 @@ label {
     font-size: 14px;
 }
 
-.input:focus {
-    outline: none;
-}
 
-.input::placeholder {
-    color: var(--text-color)
-}
-
-/* input background change in focus */
-.input:focus~.fancy-bg {
-    border: 1px solid var(--active-color);
-    background: var(--focus-input-bg-color);
-}
-
-/* search icon color change in focus */
-.input:focus~.search {
-    fill: var(--active-color);
-}
-
-/* showing close button when typing */
-.input:valid~.close-btn {
-    opacity: 1;
-    visibility: visible;
-}
-
-/* this is for the default background in input,when selecting autofill options -- you can remove this code if you do not want to override the browser style.  */
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
@@ -246,7 +280,9 @@ input:-webkit-autofill:active {
         padding: 0;
         margin: 0;
     }
+}
 
+@media (max-width: 900px) {
     .aside {
         display: none;
     }
