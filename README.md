@@ -4,7 +4,8 @@ Uma jornada de desenvolvimento Full Stack que me enisnou muitos conceitos, tecno
 
 A Hashtag Programação me propocionou essa prática e conhecimentos absurods e sou extremamente grato.
 
-![Captura de tela 2025-02-17 172803](https://github.com/user-attachments/assets/a33ee3b8-6f1b-4951-9e75-210b7ba3c197)
+![Captura de tela 2025-02-17 172803](![image](https://github.com/user-attachments/assets/7dc431e6-0e30-4c53-98e2-41f80a18c048)
+)
 
 ## Introdução
 
